@@ -1,0 +1,95 @@
+/* ContactForm.css */
+
+.contact-form-container {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .contact-form-container h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Space between form groups */
+  }
+  
+  .form-group {
+    flex: 1 1 300px; /* Flex property for responsive layout */
+    max-width: 300px;
+    min-width: 250px; /* Ensure a minimum width */
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Make text bold */
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .form-group.submit-button {
+    flex: 1 1 100%; /* Make the button span full width */
+    max-width: 300px; /* Limit button width */
+    margin-top: 15px; /* Space above the button */
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact-input-container {
+    display: flex;
+  }
+  
+  .contact-input-container select {
+    flex: 0 0 auto; /* Let the select field determine its own width */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px; /* Round the left corners */
+  }
+  
+  .contact-input-container input {
+    flex: 1; /* Fill remaining space */
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0 4px 4px 0; /* Round the right corners */
+  }
+  
+  .country-dropdown {
+    display: none;
+    position: absolute;
+    overflow-y: auto;
+    max-height: 200px; /* Limit the height of the dropdown */
+    z-index: 1; /* Ensure dropdown is above other elements */
+    background-color: #fff; /* Background color for dropdown */
+    border: 1px solid #ccc; /* Border for dropdown */
+  }
+  
+  .country-dropdown.show {
+    display: block; /* Show dropdown when toggled */
+  }
+  
