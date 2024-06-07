@@ -3,13 +3,13 @@ import './Carousel.css';
 
 // Example: Correct image paths for public folder
 const images = [
-  '/public/IMG_4054.jpg',
-  '/public/IMG_4071.jpg',
-  '/public/IMG_4091.jpg',
-  '/public/IMG_4116.jpg',
-  '/public/IMG_4165.jpg',
-  '/public/IMG_4338.jpg',
-  '/public/IMG_4094.jpg'
+  'IMG_4054.jpg',
+  'IMG_4071.jpg',
+  'IMG_4091.jpg',
+  'IMG_4116.jpg',
+  'IMG_4165.jpg',
+  'IMG_4338.jpg',
+  'IMG_4094.jpg'
 ];
 
 const Carousel = () => {
